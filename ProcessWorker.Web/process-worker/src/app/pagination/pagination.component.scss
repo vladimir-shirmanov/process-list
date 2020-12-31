@@ -1,0 +1,32 @@
+.pagination{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  margin-top: 20px;
+
+  .wrapper {
+    a {
+      user-select: none;
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover:not(.active) {
+        background-color: #ddd;
+      }
+    }
+
+    a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    a.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  }
+}

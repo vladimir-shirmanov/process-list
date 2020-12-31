@@ -1,0 +1,4 @@
+bin/
+obj/
+ProcessWorker.Web/process-worker/node_modules
+ProcessWorker.Web/process-worker/npm-debug.log

@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <label for="process-name"><b>Process Name</b></label>
+    <input id="process-name" name="process-name" type="text" placeholder="Enter Process Name" [(ngModel)]="process.name" required>
+
+    <button type="submit">Create</button>
+  </div>
+</form>

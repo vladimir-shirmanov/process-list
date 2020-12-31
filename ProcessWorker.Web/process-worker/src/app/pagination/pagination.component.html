@@ -1,0 +1,7 @@
+<div class="pagination">
+  <div class="wrapper">
+    <a (click)="inc(-1)" [ngClass]="currentPage-1 <= 0 ? 'disabled' : ''">&laquo;</a>
+    <a (click)="nav(page)" *ngFor="let page of pages" [ngClass]="page == currentPage ? 'active' : ''">{{page}}</a>
+    <a (click)="inc(1)" [ngClass]="currentPage>=maxPages ? 'disabled' : ''">&raquo;</a>
+  </div>
+</div>
